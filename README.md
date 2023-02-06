@@ -12,7 +12,7 @@ The Manga Reminder is a tool to add your currently reading manga to a list and e
 
 ## Getting Started and Requirements
 
-* Download zip from latest release, run u.exe
+* Download zip from latest release, run manga checker.exe
 
 
 ## Usage
