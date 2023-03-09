@@ -40,7 +40,7 @@ while True:
       tmp = main.search(values['-FILTER-'])
       list = tmp
       window.Element('-TABLE-').update(tmp)
-    elif event == '    Add    ':
+    elif event == '    Add    ' and len(values['-TABLE-']) > 0:
       index = values['-TABLE-'][0]
       main.add_to_list(list[index][0])
       users = main.get_list()
@@ -51,11 +51,11 @@ while True:
       date = 'Last checked ' + main.get_date()
       window.Element('-DATE-').update(date)
       window.Element('-TABLE3-').update(t)
-    elif event == '  Open URL  ':
+    elif event == '  Open URL  'and len(values['-TABLE3-']) > 0:
       index = values['-TABLE3-'][0]
       browser = webbrowser.get()
       browser.open_new(t[index][3])
-    elif event == '  Remove  ':
+    elif event == '  Remove  'and len(values['-TABLE2-']) > 0:
       indexes = values['-TABLE2-']
       rem = []
       for i in indexes:
